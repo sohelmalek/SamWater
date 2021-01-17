@@ -1,0 +1,228 @@
+/* font family */
+
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@400;500&family=Nunito&display=swap');
+:root {
+    --body-color: #fff;
+    --dark-blue: #081f46;
+    /* --paregraph: #081F46;
+    --primary-hover-color: #081F46;
+    --title-color: #081F46;
+    --price-color: #081F46;
+    --price-tile-color: #081F46; */
+    --medium-blue: #379EFF;
+    /* --heading-blue: #379eff;
+    --btn-hover-color: #379eff;
+    --social-icon-color: #379eff; */
+    --primary-bg-color: #eef9ff;
+    /* --header-hover-color: #eef9ff; */
+    --footer-bg-color: #120d48;
+    --primary-dark-color: #000000;
+    --social-icon-txt-color: #ffffff;
+    /* --fw-title-color: #ffffff; */
+    --btn-bg-color-1: #67b5ff;
+    --btn-bg-color-2: #4d86ff;
+    /* --social-icon-hover-color: #4d86ff; */
+    --txt-select-bg-color: #ecf4ff;
+    /* --woo-pr-fil-bg-color: #379eff;
+    --sale-badge-bg-color: #379eff;
+    --cart-count-color: #379eff;
+    --success-icon-color: #379eff; */
+}
+
+html {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+body,
+html {
+    background-color: var(--body-color);
+    transition: 0.5s ease-in-out;
+    -webkit-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+    scroll-behavior: smooth;
+    font-family: 'Nunito', sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.dark {
+    --body-color: #1f212e;
+    --dark-blue: #081f46;
+    --medium-blue: #379EFF;
+    --primary-bg-color: #eef9ff;
+    --footer-bg-color: #120d48;
+    --primary-dark-color: #000000;
+    --social-icon-txt-color: #ffffff;
+    --btn-bg-color-1: #67b5ff;
+    --btn-bg-color-2: #4d86ff;
+    --txt-select-bg-color: #ecf4ff;
+}
+
+h1,
+h6,
+p {
+    font-family: 'Nunito', sans-serif;
+}
+
+h2,
+h4,
+h5,
+h6 {
+    font-family: 'Dosis', sans-serif;
+}
+
+.main-banner-section {
+    height: 500px;
+    width: 100%;
+}
+
+
+/* ----dark light mode icon---------------------------------------------- */
+
+.fas {
+    cursor: pointer;
+    /* position: absolute;
+    top: 10px;
+    right: 10px; */
+    color: var(--heading-color);
+    transform: rotate(-25deg);
+}
+
+
+/* ----dark light mode icon END---------------------------------------------- */
+
+
+/* ----------Go To Top Icon------------------------------------------------------ */
+
+.top-icon:hover {
+    color: white;
+    background: var(--btn-bg-color-trans);
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+}
+
+.top-icon:focus {
+    outline: none;
+}
+
+.top-icon {
+    display: none;
+    z-index: 99;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    z-index: 9;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    background: var(--btn-bg-color);
+    text-align: center;
+    line-height: 39px;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -o-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    padding: 0;
+}
+
+
+/* ----------Go To Top Icon END------------------------------------------------------ */
+
+
+/* ---------------------navbar dropdown animation------------------------------------------------------------------- */
+
+.dropdown-menu {
+    margin-top: 0;
+}
+
+.dropdown-menu .dropdown-toggle::after {
+    vertical-align: middle;
+    border-left: 4px solid;
+    border-bottom: 4px solid transparent;
+    border-top: 4px solid transparent;
+}
+
+.dropdown-menu .dropdown .dropdown-menu {
+    left: 100%;
+    top: 0%;
+    margin: 0 20px;
+    border-width: 0;
+}
+
+.dropdown-menu .dropdown .dropdown-menu.left {
+    right: 100%;
+    left: auto;
+}
+
+.dropdown-menu>li a:hover,
+.dropdown-menu>li.show {
+    background: #007bff;
+    transition: .3s;
+    color: white;
+}
+
+.dropdown-menu>li.show>a {
+    color: white;
+}
+
+@media (min-width: 768px) {
+    .dropdown-menu .dropdown .dropdown-menu {
+        margin: 0;
+        border-width: 1px;
+    }
+}
+
+
+/* --------scroll to fix navbar animation-------------------------------- */
+
+.main_nav {
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    height: auto;
+    -webkit-transition: all ease-out .5s;
+    -o-transition: all ease-out .5s;
+    transition: all ease-out .5s;
+}
+
+.h_50px {
+    -webkit-transition: all ease-out .5s;
+    -o-transition: all ease-out .5s;
+    transition: all ease-out .5s;
+    padding: 0 !important;
+    height: 70px;
+}
+
+.h_80px {
+    -webkit-transition: all ease-out .5s;
+    -o-transition: all ease-out .5s;
+    transition: all ease-out .5s;
+    height: 100px;
+}
+
+padding: 0 !important;
+
+/* --------scroll to fix navbar animation END-------------------------------- */
+
+
+/* -------navbar dropdown animation END------------------------------------------------------------------- */
+
+svg {
+    display: block;
+}
