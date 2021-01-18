@@ -1,6 +1,6 @@
 /* ----dark light mode ON OFF SCRIPT---------------------------------------------- */
 
-const darkBtn = document.querySelector('.fas');
+const darkBtn = document.querySelector('.moon-icon');
 const bodyEl = document.querySelector('body');
 
 const darkMode = () => {
@@ -98,122 +98,24 @@ function topFunction() {
         });
     };
 })(jQuery);
+
 // ---------navbar  scroll animation END-------------------------------------------------------------------
-
-
-var navbar = $(".navbar");
-var sohel = $(".sohel");
-var mob_nav = $(".Mobile_navbar");
 $(document).ready(function() {
-    $(".sohel").add.attr
     $(function() {
-        navbar.addClass("h_80px", 2000);
+        // navbar.addClass("h_80px", 2000);
         // $(".nav-item a").removeClass("text-white");
 
         $(window).on("scroll", function() {
 
             if ($(window).scrollTop() > 50) {
 
-                // $(".nav-item a").removeClass("text-white");
 
-                $(".main_nav").addClass("active1");
-                navbar.addClass("h_50px");
-                navbar.removeClass("h_80px");
-
-                navbar.removeClass("px-1");
-                navbar.removeClass("py-3");
-
-                mob_nav.addClass("h_50px");
-                mob_nav.removeClass("h_80px");
                 $(".main_nav").css('box-shadow', '0px 1px 20px #9099ff');
-                // $(".navbar a, .navbar_brand").removeClass("text-white", 2000);
-                // $(".navbar a, .navbar_brand").addClass("text-white", 2000);
-                $(".navbar_brand span:nth-child(4)").css({
-
-                    display: "none",
-                    transition: ".7s"
-                });
-                $(".navbar_brand span:nth-child(2)").css({
-                    display: "none",
-                    transition: ".7s"
-                });
-
-
-
-
-                //$(".sohel").removeClass("sohel1");
-
-                //$(".sohel").addClass("sohel1");
-
-
-
-                $(".navbar_brand span:nth-child(1)").css({
-                    fontSize: "50px",
-                    transition: ".7s"
-                }, "slow");
-                $(".navbar_brand span:nth-child(3)").css({
-                    fontSize: "50px",
-                    transition: ".7s"
-                }, "slow");
-
-
 
             } else {
 
-                //$(".sohel").addClass("sohel1");
-                //$(".sohel").removeClass("sohel1");
 
-
-
-                //remove the background property so it comes transparent again (defined in your css)
-                $(".main_nav").removeClass("active1");
-                // $(".nav-item a").removeClass("text-white");
-
-                navbar.addClass("px-1");
-                navbar.addClass("py-3");
-
-
-                navbar.removeClass("h_50px");
-                navbar.addClass("h_80px", 2000);
-                mob_nav.removeClass("h_50px");
-                mob_nav.addClass("h_80px", 2000);
                 $(".main_nav").css('box-shadow', 'none');
-                // $(".navbar a, .navbar_brand").addClass("text-white", 2000);
-                // $(".navbar a, .navbar_brand").removeClass("text-white", 2000);
-                $(".navbar_brand span:nth-child(2)").css({
-                    display: "block",
-                    transition: ".7s"
-                }, "slow");
-                $(".navbar_brand span:nth-child(4)").css({
-                    display: "block",
-                    transition: ".7s"
-                }, "slow");
-
-
-
-                $(".navbar_brand span:nth-child(1)").css({
-                    fontSize: "25px",
-                    // transform: 'translate(0px, 0px)',
-                    // opacity: '1',
-                    transition: ".7s"
-                }, "slow");
-                $(".navbar_brand span:nth-child(3)").css({
-                    fontSize: "25px",
-                    // transform: 'translate(0px, 0px)',
-                    // opacity: '1',
-                    transition: ".7s"
-                }, "slow");
-
-
-
-                // $(".malek::first-letter").css({
-                //     transform: 'translate(0px, 0px)',
-                //     opacity: '1',
-                //     transition: ".7s"
-                // }, "slow");
-
-
-
             }
 
         });

@@ -4,12 +4,14 @@
 :root {
     --body-color: #fff;
     --dark-blue: #081f46;
-    /* --paregraph: #081F46;
     --primary-hover-color: #081F46;
+    /* --paregraph: #081F46;
+   
     --title-color: #081F46;
     --price-color: #081F46;
     --price-tile-color: #081F46; */
     --medium-blue: #379EFF;
+    --primary-color: #379EFF;
     /* --heading-blue: #379eff;
     --btn-hover-color: #379eff;
     --social-icon-color: #379eff; */
@@ -29,11 +31,17 @@
     --success-icon-color: #379eff; */
 }
 
-html {
+.dark {
+    --primary-bg-color: #000000;
+    --dark-blue: #ffffff !important;
+}
+
+
+/* html {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 16px;
     line-height: 1.5;
-}
+} */
 
 body,
 html {
@@ -43,7 +51,7 @@ html {
     -o-transition: 0.5s ease-in-out;
     transition: 0.5s ease-in-out;
     scroll-behavior: smooth;
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Nunito', sans-serif !important;
 }
 
 * {
@@ -65,28 +73,22 @@ html {
     --txt-select-bg-color: #ecf4ff;
 }
 
-h1,
 h6,
 p {
     font-family: 'Nunito', sans-serif;
 }
 
+h1,
 h2,
 h4,
-h5,
-h6 {
+h5 {
     font-family: 'Dosis', sans-serif;
-}
-
-.main-banner-section {
-    height: 500px;
-    width: 100%;
 }
 
 
 /* ----dark light mode icon---------------------------------------------- */
 
-.fas {
+.moon-icon {
     cursor: pointer;
     /* position: absolute;
     top: 10px;
@@ -201,28 +203,203 @@ h6 {
     transition: all ease-out .5s;
 }
 
-.h_50px {
-    -webkit-transition: all ease-out .5s;
-    -o-transition: all ease-out .5s;
-    transition: all ease-out .5s;
-    padding: 0 !important;
-    height: 70px;
-}
-
-.h_80px {
-    -webkit-transition: all ease-out .5s;
-    -o-transition: all ease-out .5s;
-    transition: all ease-out .5s;
-    height: 100px;
-}
-
-padding: 0 !important;
 
 /* --------scroll to fix navbar animation END-------------------------------- */
 
 
 /* -------navbar dropdown animation END------------------------------------------------------------------- */
 
-svg {
+i {
     display: block;
+}
+
+
+/* ------NAVBAR---------------------------------------------------------------------------- */
+
+.navbar {
+    padding: 1.8em 0em 1em 2em;
+}
+
+.navbar-nav .nav-item {
+    padding: 0em .4em 0em .4em;
+    margin: auto;
+    font-weight: 800;
+}
+
+.navbar-nav .nav-item a {
+    font-size: .9em;
+    transition: .4s;
+    font-family: 'Nunito', sans-serif;
+}
+
+.navbar-nav .nav-item a p {
+    font-size: 12px;
+    width: 5rem;
+}
+
+.navbar-nav .nav-item a:hover,
+.active,
+.navbar-light .navbar-nav .nav-icon i {
+    color: var(--medium-blue) !important;
+}
+
+.dropdown-menu li a:hover {
+    background-color: var(--primary-bg-color);
+    color: var(--primary-color);
+}
+
+.dropdown-menu li {
+    padding: 0em 1em 0em 1em;
+}
+
+.dropdown-menu li a {
+    border-radius: 1em;
+    font-size: 0.875rem;
+    line-height: 1.381;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.nav-item ul {
+    border-radius: 1em;
+    box-shadow: 0 20px 30px 0 rgba(41, 112, 250, 0.2);
+    background-color: var(--body-color);
+}
+
+.navbar-light .navbar-nav .nav-link,
+.dropdown-menu .dropdown-item {
+    font-family: 'Nunito', sans-serif;
+    color: var(--dark-blue);
+}
+
+.navbar-light .navbar-nav .nav-link i {
+    line-height: 35px;
+    font-size: 1.5rem;
+}
+
+.navbar-light .navbar-nav .nav-icon {
+    height: 2.6875rem;
+    padding: 0 0.75rem;
+    background: white;
+    z-index: 2;
+    cursor: pointer;
+    box-shadow: 0 20px 30px 0 rgba(41, 112, 250, 0.2);
+}
+
+.navbar-light .navbar-nav .nav-icon i {
+    width: 1.375rem;
+    height: 1.1875rem;
+    line-height: 35px;
+}
+
+.navbar-brand {
+    color: var(--primary-color) !important;
+}
+
+.main-banner-section1 {
+    background: var(--primary-bg-color);
+}
+
+.main-banner-section {
+    background-image: url('https://i.ibb.co/qJc3yFm/Vector-3.png');
+    background-size: 32%;
+    background-repeat: no-repeat;
+    background-position: top left;
+}
+
+
+/* ------NAVBAR END---------------------------------------------------------------------------- */
+
+
+/* ----main banner heading------------------------------------------------------------- */
+
+.btn-1 {
+    background-color: #FFFFFF00;
+    font-size: 20px;
+    transition: .3s;
+    letter-spacing: 2px;
+    padding: 10px 20px 10px 20px;
+    border-radius: 50px;
+    background: var(--btn-bg-color-1);
+    color: #fff;
+}
+
+.btn-2 {
+    background-color: #FFFFFF00;
+    font-size: 20px;
+    transition: .3s;
+    letter-spacing: 2px;
+    padding: 10px 20px 10px 20px;
+    border-radius: 50px;
+    background: var(--body-color);
+    color: var(--dark-blue);
+}
+
+.box-shadow {
+    box-shadow: 0 20px 30px 0 rgba(41, 112, 250, 0.2);
+}
+
+.btn-1:hover,
+.btn-2:hover {
+    text-decoration: none;
+    box-shadow: 0 20px 30px 0 rgba(41, 112, 250, 0.45);
+    color: #fff;
+    transition: .3s;
+}
+
+.btn-2:hover {
+    color: var(--medium-blue);
+    transition: .3s;
+}
+
+.main-banner-heading h1:nth-child(1),
+.main-banner-heading h1:nth-child(2) {
+    font-size: 70px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.main-banner-heading h1:nth-child(1) {
+    color: var(--dark-blue);
+}
+
+.main-banner-heading h1:nth-child(2) {
+    color: var(--medium-blue);
+    padding: 0;
+    margin: 0;
+    line-height: 1;
+}
+
+.main-banner-heading h6 {
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 1.5;
+    color: var(--primary-hover-color);
+    letter-spacing: .7px;
+}
+
+.main-banner-heading h6 strong span {
+    color: var(--primary-color);
+    font-weight: bold;
+    font-size: 20px;
+    margin-right: 8px;
+}
+
+.video-icon {
+    background: var(--body-color);
+    border-radius: 50px;
+    padding: 1em 1em 1em 1.2em;
+    font-size: 17px;
+    color: var(--dark-blue);
+}
+
+.video-icon-main {
+    display: flex;
+    width: 150px;
+    align-items: center;
+    color: var(--dark-blue);
+}
+
+a:hover {
+    text-decoration: none;
 }
