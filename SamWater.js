@@ -62,8 +62,8 @@ function topFunction() {
         xl: 1140,
         navbar_expand: 'lg',
         animation: true,
-        animateIn: 'fadeInUp',
-        animation_duraion: '5s',
+        animateIn: 'fadeIn',
+        animation_duraion: '3s',
     };
     $.fn.bootnavbar = function(options) {
 
