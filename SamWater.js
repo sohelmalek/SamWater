@@ -62,8 +62,8 @@ function topFunction() {
         xl: 1140,
         navbar_expand: 'lg',
         animation: true,
-        animateIn: 'fadeInUp',
-        animation_duraion: '5s',
+        animateIn: 'fadeIn',
+        animation_duraion: '.3s',
     };
     $.fn.bootnavbar = function(options) {
 
@@ -110,12 +110,15 @@ $(document).ready(function() {
             if ($(window).scrollTop() > 50) {
 
 
+
                 $(".main_nav").css('box-shadow', '0px 1px 20px #9099ff');
 
             } else {
 
 
                 $(".main_nav").css('box-shadow', 'none');
+
+
             }
 
         });

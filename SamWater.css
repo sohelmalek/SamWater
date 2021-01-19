@@ -54,11 +54,13 @@ html {
     font-family: 'Nunito', sans-serif !important;
 }
 
+
+/* 
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-}
+} */
 
 .dark {
     --body-color: #1f212e;
@@ -194,6 +196,7 @@ h5 {
 /* --------scroll to fix navbar animation-------------------------------- */
 
 .main_nav {
+    background-color: #d0f6ff;
     position: fixed;
     z-index: 1000;
     width: 100%;
@@ -217,13 +220,14 @@ i {
 /* ------NAVBAR---------------------------------------------------------------------------- */
 
 .navbar {
-    padding: 1.8em 0em 1em 2em;
+    /* padding: 1.8em 0em 1em 2em; */
 }
 
 .navbar-nav .nav-item {
     padding: 0em .4em 0em .4em;
     margin: auto;
-    font-weight: 800;
+    font-weight: 600;
+    text-align: center;
 }
 
 .navbar-nav .nav-item a {
@@ -234,7 +238,13 @@ i {
 
 .navbar-nav .nav-item a p {
     font-size: 12px;
-    width: 5rem;
+    text-align: left;
+    margin: 0;
+}
+
+.nav-contact p {
+    text-align: center;
+    margin: 0;
 }
 
 .navbar-nav .nav-item a:hover,
@@ -298,6 +308,29 @@ i {
 
 .main-banner-section1 {
     background: var(--primary-bg-color);
+    position: relative;
+    padding-bottom: 20%;
+}
+
+.main-banner-bottom1 .banner-bottom img {
+    height: 450px;
+}
+
+.main-banner-bottom .banner-bottom img {
+    width: 100%;
+    /* height: 250px; */
+}
+
+.main-banner-bottom {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.main-banner-bottom1 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
 }
 
 .main-banner-section {
@@ -354,7 +387,7 @@ i {
 
 .main-banner-heading h1:nth-child(1),
 .main-banner-heading h1:nth-child(2) {
-    font-size: 70px;
+    font-size: 9vmin;
     font-weight: 700;
     letter-spacing: 2px;
 }
@@ -370,6 +403,11 @@ i {
     line-height: 1;
 }
 
+.main-banner-heading span {
+    display: flex;
+    flex-direction: column;
+}
+
 .main-banner-heading h6 {
     font-weight: normal;
     font-size: 20px;
@@ -378,7 +416,8 @@ i {
     letter-spacing: .7px;
 }
 
-.main-banner-heading h6 strong span {
+.main-banner-heading h6 strong span,
+.watercomp-block p span {
     color: var(--primary-color);
     font-weight: bold;
     font-size: 20px;
@@ -402,4 +441,158 @@ i {
 
 a:hover {
     text-decoration: none;
+}
+
+.main-banner-bottom {
+    margin: 0;
+}
+
+.section-heading {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 61px;
+    letter-spacing: 1px;
+    margin-bottom: 0.25em;
+}
+
+.section-heading span {
+    color: var(--medium-blue);
+}
+
+.section-heading-main h6 {
+    color: #081F46;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 1em;
+    letter-spacing: 2px;
+}
+
+.watercomp-block-main {
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: 35%;
+    background-position: top right;
+    background-image: url(https://i.ibb.co/yqqJsRK/drop-filled-1.png);
+}
+
+.watercomp-block-main1 {
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: 35%;
+    background-position: top left !important;
+    background-image: url(https://i.ibb.co/yqqJsRK/drop-filled-1.png);
+}
+
+.watercomp-block-img {
+    position: absolute;
+}
+
+.watercomp-block h6:nth-child(1) {
+    color: var(--footer-bg-color);
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1em;
+    letter-spacing: 2px;
+}
+
+.watercomp-block h6:nth-child(2) {
+    color: var(--medium-blue);
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1em;
+    letter-spacing: 2px;
+}
+
+.watercomp-block h6 span {
+    color: var(--medium-blue);
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+
+/* -------Product------------------------------------------------------- */
+
+.product-main-section {
+    background: transparent;
+    background-color: #FFFFFF;
+    background-image: url(https://i.ibb.co/jVHy0yG/resourse-2-2.png);
+    background-size: 100% 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+}
+
+.product-sub a img {
+    /* border-radius: 8px;
+    transition: all 0.45s ease-in-out;
+    height: 17rem;
+    margin: auto;
+    object-fit: contain;
+    width: max-content; */
+    border-radius: 8px;
+    transition: all 0.45s ease-in-out;
+    min-height: 17rem;
+    margin: auto;
+    object-fit: contain;
+    width: max-content;
+}
+
+.product-sub {
+    background-color: var(--body-color);
+    border-radius: 20px;
+}
+
+.product-img {
+    margin: 0em 5.5em 0em 5.5em;
+}
+
+.product-name h2 {
+    font-size: 21px;
+    color: var(--primary-hover-color);
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.product-rating-star i {
+    color: var(--medium-blue);
+    margin-right: 2%;
+    font-size: 13px;
+}
+
+.product-price h6 span {
+    font-weight: 700;
+    color: #828282;
+    letter-spacing: 1px;
+    margin-right: 4%;
+    font-size: 19px;
+}
+
+.product-price h6 {
+    font-weight: 700;
+    color: var(--dark-blue);
+    letter-spacing: 1px;
+    font-size: 19px;
+}
+
+.add-to-cart a svg {
+    width: auto;
+    margin-right: 2%;
+}
+
+.add-to-cart-btn {
+    font-size: 14px;
+    border: 1px solid;
+    line-height: 16px;
+    padding: 15px 25px 15px 25px;
+    border-radius: 40px;
+    color: var(--primary-color);
+    transition: .6s;
+    border-color: var(--primary-color);
+}
+
+.add-to-cart-btn:hover {
+    transition: .6s;
+    background-color: var(--medium-blue);
+    color: var(--body-color);
 }
